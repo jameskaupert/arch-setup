@@ -1,0 +1,12 @@
+---
+- name: Install qtile
+  pacman:
+    name: 
+      - qtile
+      - python-pywlroots
+      - xorg-server
+      - xorg-xinit
+    state: present
+  tags:
+    - qtile
+

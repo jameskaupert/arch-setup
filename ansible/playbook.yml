@@ -1,0 +1,7 @@
+---
+- hosts: control
+  become: yes
+  roles:
+    - { role: base, tags: ['shell']}
+    - { role: neovim, tags: ['neovim'] }
+    - { role: qtile, tags: ['qtile']}
