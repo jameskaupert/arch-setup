@@ -15,3 +15,10 @@
 
 - name: set-ntp
   command: /usr/bin/timedatectl set-ntp on
+
+- name: install packages
+  pacman:
+    name: "{{ packages }}"
+    state: present
+  tags:
+    - packages
