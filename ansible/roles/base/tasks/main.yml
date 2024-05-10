@@ -1,4 +1,9 @@
 ---
+- name: Pacman Update
+  pacman:
+    update_cache: yes
+    upgrade: yes
+
 - name: Install Bash
   pacman:
     name:
@@ -7,3 +12,6 @@
     state: present
   tags:
     - shell
+
+- name: set-ntp
+  command: /usr/bin/timedatectl set-ntp on
