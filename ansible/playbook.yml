@@ -2,7 +2,7 @@
 - hosts: localhost
   become: yes
   vars_files:
-    - vars/variables.yml
+    - group_vars/packages.yml
   roles:
     - { role: base }
     - { role: neovim, tags: ['neovim'] }
