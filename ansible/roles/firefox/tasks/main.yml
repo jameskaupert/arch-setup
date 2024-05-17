@@ -1,0 +1,6 @@
+---
+- name: Firefox
+  pacman:
+    name: 
+      - firefox-developer-edition
+    state: present

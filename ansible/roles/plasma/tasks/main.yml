@@ -1,0 +1,5 @@
+---
+- name: Install Plasma
+  pacman:
+    name:
+      - plasma

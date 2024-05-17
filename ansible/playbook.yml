@@ -7,6 +7,9 @@
   roles:
     - { role: base }
     - { role: neovim, tags: ['neovim'] }
+    - { role: plasma }
+    - { role: alacritty }
+    - { role: firefox }
 
   vars_prompt:
     - name: user_password
