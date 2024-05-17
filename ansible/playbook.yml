@@ -3,6 +3,11 @@
   become: yes
   vars_files:
     - group_vars/packages.yml
+    - group_vars/user.yml
   roles:
     - { role: base }
     - { role: neovim, tags: ['neovim'] }
+
+  vars_prompt:
+    - name: user_password
+      prompt: "Enter local user password"
