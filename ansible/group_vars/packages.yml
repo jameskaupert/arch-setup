@@ -1,4 +1,6 @@
 packages:
   - fzf
+  - gcc
+  - go
   - openssh
   - stow
