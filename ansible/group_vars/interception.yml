@@ -1,0 +1,5 @@
+interception:
+  caps2esc:
+    enabled: True
+    mode: 1
+    delay: 20000

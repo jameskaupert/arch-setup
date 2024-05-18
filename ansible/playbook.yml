@@ -4,12 +4,14 @@
   vars_files:
     - group_vars/packages.yml
     - group_vars/user.yml
+    - group_vars/interception.yml
   roles:
     - { role: base }
     - { role: neovim, tags: ['neovim'] }
     - { role: plasma }
     - { role: alacritty }
     - { role: firefox }
+    - { role: interception }
 
   vars_prompt:
     - name: user_password
