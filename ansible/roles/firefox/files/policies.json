@@ -3,6 +3,13 @@
 	"AppAutoUpdate": true,
 	"AutofillAddressEnabled": false,
 	"AutofillCreditCardEnabled": false,
+	"DisableTelemetry": true,
+	"EnableTrackingProtection": {
+		"Value": true,
+		"Cryptomining": true,
+		"Fingerprinting": true,
+		"EmailTracking": true
+	},
 	"ExtensionSettings": {
 		"uBlock0@raymondhill.net": {
 			"installation_mode": "force_installed",
@@ -14,6 +21,16 @@
 		}
 	},
 	"ExtensionUpdate": true,
+	"FirefoxHome": {
+
+		"SponsoredTopSites": false,
+		"Highlights": false,
+		"Pocket": false,
+		"SponsoredPocket": false
+	},
+	"FirefoxSuggest": {
+		"SponsoredSuggestions": false
+	},
 	"PasswordManagerEnabled": false
   }
 }
